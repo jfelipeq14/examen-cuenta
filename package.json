@@ -1,5 +1,5 @@
 {
-  "name": "parqueadero-node",
+  "name": "examen",
   "version": "1.0.0",
   "main": "app.js",
   "type": "module",
@@ -8,9 +8,9 @@
     "changes": "git fetch origin develop && git pull origin develop && npm i"
   },
   "keywords": [],
-  "author": "",
+  "author": "Juan Felipe Quintero",
   "license": "ISC",
-  "description": "Proyecto #Hermes para la agencia de viajes #ParcheTravels",
+  "description": "Examen de cuenta bancaria",
   "dependencies": {
     "bcryptjs": "2.4.3",
     "dotenv": "16.4.5",
