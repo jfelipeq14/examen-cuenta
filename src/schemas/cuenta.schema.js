@@ -28,6 +28,11 @@ const cuentaSchema = new Schema({
 
 // Realizar un autoincremetable en el campo numeroCuenta
 cuentaSchema.pre('save', async function (next) {
+  const cuenta = this
+  if (!cuenta.isNew) {
+    return next()
+  }
+
   bcrypt
     .genSalt(10)
     .then((salts) => {
@@ -44,10 +49,6 @@ cuentaSchema.pre('save', async function (next) {
     .catch((err) => {
       next(err)
     })
-  const cuenta = this
-  if (!cuenta.isNew) {
-    return next()
-  }
 
   const ultimoRegistro = await CuentaSchema.findOne().sort({
     numeroCuenta: -1

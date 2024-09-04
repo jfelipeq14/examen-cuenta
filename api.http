@@ -1,12 +1,12 @@
 ### Recuperar todo
-GET http://localhost:3000/cuenta
+GET https://examen-cuenta.onrender.com/cuenta
 
 ### Recuperar un dato por numeroCuenta
-GET http://localhost:3000/cuenta/0
+GET https://examen-cuenta.onrender.com/cuenta/1
 
 
 ### Crear un dato con POST
-POST http://localhost:3000/cuenta
+POST https://examen-cuenta.onrender.com/cuenta
 Content-Type: application/json
 
 {
@@ -15,18 +15,18 @@ Content-Type: application/json
 }
 
 ### Borrar un dato
-DELETE http://localhost:3000/cuenta/2
+DELETE https://examen-cuenta.onrender.com/cuenta/1
 
-### Condignar
-PATCH http://localhost:3000/cuenta/1
+### Retiro
+PATCH https://examen-cuenta.onrender.com/cuenta/1
 Content-Type: application/json
 
 {
   "retiro": 20000
 }
 
-### Retirar
-PATCH http://localhost:3000/cuenta/1
+### Deposito
+PATCH https://examen-cuenta.onrender.com/cuenta/1
 Content-Type: application/json
 
 {
