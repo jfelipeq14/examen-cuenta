@@ -1,0 +1,34 @@
+### Recuperar todo
+GET http://localhost:3000/cuenta
+
+### Recuperar un dato por numeroCuenta
+GET http://localhost:3000/cuenta/0
+
+
+### Crear un dato con POST
+POST http://localhost:3000/cuenta
+Content-Type: application/json
+
+{
+  "documentoCliente": "100",
+  "claveAcceso": "12345"
+}
+
+### Borrar un dato
+DELETE http://localhost:3000/cuenta/2
+
+### Condignar
+PATCH http://localhost:3000/cuenta/1
+Content-Type: application/json
+
+{
+  "retiro": 20000
+}
+
+### Retirar
+PATCH http://localhost:3000/cuenta/1
+Content-Type: application/json
+
+{
+  "deposito": 20000
+}

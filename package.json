@@ -1,0 +1,26 @@
+{
+  "name": "parqueadero-node",
+  "version": "1.0.0",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/app.js",
+    "changes": "git fetch origin develop && git pull origin develop && npm i"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Proyecto #Hermes para la agencia de viajes #ParcheTravels",
+  "dependencies": {
+    "bcryptjs": "2.4.3",
+    "dotenv": "16.4.5",
+    "express": "4.19.2",
+    "mongoose": "8.5.4"
+  },
+  "devDependencies": {
+    "standard": "17.1.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
