@@ -13,6 +13,7 @@ const cuentaModel = new CuentaModel()
 server.app.get('/', (req, res) => {
   res.send('Examen: Cuenta')
 })
+
 server.app.use('/cuenta', createCuentaRouter({ cuentaModel }))
 
 server.dbConnection()

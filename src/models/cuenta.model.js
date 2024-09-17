@@ -1,8 +1,11 @@
+// El modelo se conecta directamente con la base de datos
+
+// Importar el schema de la cuenta para manipular la BD
 import { CuentaSchema } from '../schemas/cuenta.schema.js'
 
 export class CuentaModel {
   // get: obtener la informacion de todas las cuentas
-  async get () { // async: funcion asincrona
+  async getAll () { // async: funcion asincrona
     // Se obtiene la informacion de todas las cuentas usando el schema (informacion de la base de datos)
     const data = await CuentaSchema.find() // await: espera a que la funcion termine para continuar
 
